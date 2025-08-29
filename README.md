@@ -9,72 +9,71 @@
 
 
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodge Charger 1970</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        main { max-width: 800px; margin: auto; padding: 20px; background-color: #222; border-radius: 10px; }
+        .fotos { display: flex; gap: 10px; flex-wrap: wrap; }
+        .fotos img { flex: 1 1 48%; border-radius: 10px; object-fit: cover; }
+        form { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+        input, select { padding: 10px; border: none; border-radius: 5px; outline: none; }
+        label { font-weight: bold; }
+        .btn-comprar { background-color: #28a745; color: white; font-size: 1.2em; border: none; padding: 10px; cursor: pointer; border-radius: 5px; }
+        .btn-comprar:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dodge Charger 1970</h1>
+    </header>
+
+    <main>
+        <div class="fotos">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/1970_Dodge_Charger_%2848420866752%29.jpg" alt="Dodge Charger 1970">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/1970_Dodge_Charger_RT.jpg" alt="Dodge Charger Lateral">
+        </div>
+
+        <h2 style="color:#ff6600; margin-top:20px;">Ficha Técnica</h2>
+        <ul>
+            <li>Motor: V8 7.0L HEMI</li>
+            <li>Potência: 425 cv</li>
+            <li>Transmissão: Manual 4 marchas</li>
+            <li>Ano: 1970</li>
+        </ul>
+
+        <h2 style="color:#ff6600;">Preço</h2>
+        <p style="font-size: 1.5em; font-weight: bold;">R$ 550.000</p>
+
+        <h2 style="color:#ff6600; margin-top:20px;">Comprar este carro</h2>
+        <form>
+            <label>Nome Completo:</label>
+            <input type="text" placeholder="Digite seu nome" required>
+
+            <label>E-mail:</label>
+            <input type="email" placeholder="Digite seu e-mail" required>
+
+            <label>Telefone:</label>
+            <input type="tel" placeholder="(xx) xxxxx-xxxx" required>
+
+            <label>Forma de Pagamento:</label>
+            <select required>
+                <option value="">Selecione</option>
+                <option>Cartão de Crédito</option>
+                <option>Boleto Bancário</option>
+                <option>Pix</option>
+                <option>Transferência Bancária</option>
+            </select>
+
+            <button type="submit" class="btn-comprar">Finalizar Compra</button>
+        </form>
+    </main>
+</body>
+</html>
 
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #111;
-    color: white;
-}
 
-header {
-    text-align: center;
-    padding: 20px;
-    background: linear-gradient(90deg, #ff0000, #ff6600);
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
-
-header p {
-    font-size: 1.2em;
-}
-
-.carros-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.carro-card {
-    background-color: #222;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.carro-card:hover {
-    transform: scale(1.05);
-}
-
-.carro-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.carro-card h2 {
-    margin: 10px 0;
-    color: #ff6600;
-}
-
-button {
-    background-color: #ff6600;
-    color: white;
-    border: none;
-    padding: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1em;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background-color: #ff3300;
-}
